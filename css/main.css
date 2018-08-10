@@ -15,17 +15,32 @@ input, textarea, select, button {
     text-shadow: none;
     display: inline-block;
     margin: 0em;
-    font: 400 13.3333px Arial;
     border: 1px solid #efefef;
     font-size: 16px;
     padding: 9px 0 7px 8px;
     background: #fafafa;
     width: 100%;
     -webkit-appearance: none;
+    border-radius: 5px;
     margin-bottom: 15px;
+    font-weight: 600;
+    line-height: 26px;
+          font-family: 'Varela Round', sans-serif !important;
+
+  }
+
+input[type="text"], input[type="password"], input[type="email"]
+{
+    font-size:20px;
+      font-family: 'Varela Round', sans-serif !important;
+      color: grey;
+      font-weight: 400;
+
 }
 
-
+.pointer{
+  cursor: pointer !important;
+}
 
 .m-auto{
   display: block;
@@ -34,9 +49,8 @@ input, textarea, select, button {
 }
 
 /* MARGIN */
-.m-l-10{
-  margin-left: 10%;
-}
+.m-l-10{margin-left: 10%;}
+.m-r-50{margin-right: 50%;}
 /*FONT SIZE*/
 .fs-1 {font-size: 1px;}
 .fs-2 {font-size: 2px;}
@@ -96,6 +110,7 @@ input, textarea, select, button {
 .p-r-3{padding-right: 3%;}
 .p-r-4{padding-right: 4%;}
 .p-r-5{padding-right: 5%;}
+.p-1{padding: 1%;}
 
 /*COLOURED TEXTS*/
 .txt-wht{
@@ -198,6 +213,7 @@ input, textarea, select, button {
 .auth-page{
 	background-color: #fafafa;
 	padding-bottom: 5%;
+  padding-top: 20%;
 
 }
 .auth-page-centerbox{
@@ -205,7 +221,7 @@ input, textarea, select, button {
 	justify-content: center;
 	align-content: center;
 	align-items: flex-start;
-	margin-top: 5%;
+	margin-top: 20%;
 	min-height: 100vh;
 
 }
@@ -233,6 +249,15 @@ input, textarea, select, button {
 	display: block;
 	float:left;
 	width:100%;
+  background-image:url("../images/question (1).jpg");
+  background-repeat: none;
+  background-size: cover;
+  background-position: center;
+  height: 32vw;
+}
+
+.b-2{
+    height: 35vw !important;
 }
 
 .auth-page-banner img{
@@ -300,6 +325,7 @@ nav {
   display: block;
   margin: 0 auto;
   margin-top: 20%;
+  padding-bottom: 10%;
 }
 .menubody {
     display: block;
@@ -380,7 +406,7 @@ nav {
 
 .menubody ul li{
   display: block;
-  height: 25%;
+  height: 19.9%;
   border-bottom-style: solid;
   border-bottom-width:1px;
   border-bottom-color:white;
@@ -587,6 +613,12 @@ hr {
     cursor: default;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
+    cursor: pointer;
+}
+
+.not-selected{
+   color: #40a0e0 ;
+   cursor: pointer;
 }
 
 .tog-pane{
@@ -603,6 +635,67 @@ hr {
 .specs{
     display: flex;
     float: right;
+}
+
+
+
+.thefooter{
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #40a0e0;
+  color: white;
+
+}
+
+.centered{
+  text-align: center;
+}
+
+.block{
+  display: block;
+  margin: 0 auto;
+  float: none !important;
+  text-align: center;
+}
+
+.search-box{
+  display: none;
+  position: relative;
+  width:20%;
+  margin-left: 10%;
+}
+
+.search-box input{
+  margin-bottom: 0;
+  padding-left:40px;
+}
+
+.pos{
+  position: absolute;
+  padding: 10px;
+  pointer-events: none;
+  color: blue;
+  left: 0;
+  padding-bottom: 5px;
+
+}
+
+.search-input{
+  border-style: solid;
+  border-color:blue
+  padding-left: 30px;
+}
+
+.hide-this{
+  display: none !important;
+}
+
+.show-this{
+  display: block !important;
 }
 /* Medium devices (tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
@@ -637,18 +730,22 @@ hr {
   float:right;
 }
 
-
-
 .profile-details{
     width: 35%;
   }
+
+ .search-box{
+    display: block;
+  }
+
+
 }
 
 /* Large devices (desktops, 992px and up */
 @media only screen and (min-width: 992px) {
 
 .auth-page-centerbox{
-	margin-top: 20%;
+	margin-top: 2%;
 }
 
 .auth-page-leftside{
@@ -685,7 +782,14 @@ hr {
   margin-bottom: 2%;
 }
 
+.auth-page-banner{
+    height: 39vw;
+  }
 
+ .search-box{
+    display: block;
+    margin-left: 15%;
+  }
 
 
 }
@@ -710,6 +814,9 @@ hr {
   padding-top: 1%;
 }
 
+.auth-page{
+  padding-top: 2%;
+}
 	.auth-page-centerbox{
 	margin-top: 5%;
 }
@@ -739,6 +846,15 @@ hr {
 .toggleable{
   width: 70%;
 }
+
+.auth-page-banner{
+    height: 26vw;
+  }
+
+  .search-box{
+    display: block;
+    margin-left: 30%;
+  }
 }
 	
 
