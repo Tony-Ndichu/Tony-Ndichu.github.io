@@ -8,11 +8,10 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
 
-```
-Give examples
-```
+* XAMPP 
+
+Resource: https://www.apachefriends.org/index.html
 
 ### Installing
 
@@ -36,16 +35,6 @@ $ cd UI
 * [HTML](http://www.dropwizard.io/1.0.2/docs/) - HTML
 * [CSS](http://devdocs.io/css/) - CSS
 * [JAVASCRIPT](http://devdocs.io/javascript/) - And some good old plain javascript.
-
-
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
-## Authors
-
-* **Antony Ndichu** - *Initial work* - [StackOverflow-Lite](https://github.com/Tony-Ndichu/StackOverflow-Lite)
 
 
 ## License
